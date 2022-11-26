@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ningowood!</title>
+  <link rel="icon" href="/ningowood.png"/>
+
+  <!--
+    Remove this if you only support browsers that support async/await.
+    This is needed by babel to share largeish helper code for compiling async/await in older
+    browsers. More information at https://github.com/single-spa/create-single-spa/issues/112
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
+
+  <!--
+    This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
+    Learn more about CSP policies at https://content-security-policy.com/#directive
+  -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:*; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:*; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';"> -->
+  <meta name="importmap-type" content="systemjs-importmap" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
+  <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
+  <!-- <meta name="import-map-overrides-domains" content="denylist:prod.example.com" /> -->
+
+  <!-- Shared dependencies go into this import map. Your shared dependencies must be of one of the following formats:
+
+    1. System.register (preferred when possible) - https://github.com/systemjs/systemjs/blob/master/docs/system-register.md
+    2. UMD - https://github.com/umdjs/umd
+    3. Global variable
+
+    More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
+  -->
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+        "react": "https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.production.min.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.production.min.js",
+        "axios": "https://cdn.jsdelivr.net/npm/axios@1.1.3/dist/axios.min.js",
+        "eventemitter3": "https://unpkg.com/eventemitter3@latest/umd/eventemitter3.min.js"
+      }
+    }
+  </script>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></link>
+
+  <!-- Add your organization's prod import map URL to this script's src  -->
+  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+
+  <!-- "@ningowood/root-user": "//localhost:8503/ningowood-root-user.js", -->
+  <!-- "@ningowood/app-osc": "//localhost:8603/ningowood-app-osc.js", -->
+
+  <% if (isLocal) { %>
+    <!-- "@ningowood/util-styleguide": "//localhost:8802/ningowood-util-styleguide.js" -->
+    <!-- "@ningowood/util-root": "//localhost:8900/ningowood-util-root.js" -->
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@ningowood/root-config": "//localhost:8500/ningowood-root-config.js",
+          "@ningowood/root-login": "//localhost:8501/ningowood-root-login.js",
+          "@ningowood/app-home": "//localhost:8600/ningowood-app-home.js",
+          "@ningowood/app-game": "//localhost:8601/ningowood-app-game.js",
+          "@ningowood/app-film": "//localhost:8602/ningowood-app-film.js",
+          "@ningowood/app-osc": "//localhost:8603/ningowood-app-osc.js",
+          "@ningowood/app-football": "//localhost:8604/ningowood-app-football.js",
+          "@ningowood/parcel-navbar": "//localhost:8502/ningowood-parcel-navbar.js",
+          "@ningowood/parcel-navbar-second": "//localhost:8503/ningowood-parcel-navbar-second.js"
+        }
+      }
+    </script>
+  <% } else {%>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@ningowood/root-config": "/ningowood-root-config.js",
+          "@ningowood/root-login": "/root-login-static/ningowood-root-login.js",
+          "@ningowood/app-home": "/app-home-static/ningowood-app-home.js",
+          "@ningowood/app-game": "/app-game-static/ningowood-app-game.js",
+          "@ningowood/app-film": "/app-film-static/ningowood-app-film.js",
+          "@ningowood/app-osc": "/app-osc-static/ningowood-app-osc.js",
+          "@ningowood/app-football": "/app-football-static/ningowood-app-football.js",
+          "@ningowood/parcel-navbar": "/parcel-navbar-static/ningowood-parcel-navbar.js",
+          "@ningowood/parcel-navbar-second": "/parcel-navbar-second-static/ningowood-parcel-navbar-second.js"
+        }
+      }
+    </script>
+  <% } %>
+
+  <!--
+    If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
+    Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
+  -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+  <% if (isLocal) { %>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+  <% } else { %>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+  <% } %>
+
+</head>
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <script>
+    System.import('@ningowood/root-config');
+    // System.import('@ningowood/util-styleguide');
+  </script>
+  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+</body>
+</html>

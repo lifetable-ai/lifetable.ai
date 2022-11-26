@@ -1,0 +1,28 @@
+<single-spa-router>
+  <main>
+    <div>
+      <route path="/app/home">
+        <application name="@ningowood/app-home"></application>
+      </route>
+      <route path="/app/film">
+        <application name="@ningowood/app-film"></application>
+      </route>
+      <route path="/app/game">
+        <application name="@ningowood/app-game"></application>
+      </route>
+      <route path="/app/osc">
+        <application name="@ningowood/app-osc"></application>
+      </route>
+      <route path="/app/football">
+        <application name="@ningowood/app-football"></application>
+      </route>
+      <!-- <route path="/root/user">
+        <application name="@ningowood/root-user"></application>
+      </route> -->
+      <redirect from="/admin" to="/"></redirect>
+      <route default>
+        <application name="@ningowood/root-login"></application>
+      </route>
+    </div>
+  </main>
+</single-spa-router>

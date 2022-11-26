@@ -1,0 +1,88 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @default(autoincrement()) @id
+  username String @unique
+  email String @unique
+  password String
+  is_active Boolean? @default(true)
+
+  // timelines Timeline[]
+
+  created_time DateTime?
+  last_login_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
+
+model Timeline {
+  id Int @default(autoincrement()) @id
+  start_time DateTime
+  duration Int?
+
+  email String
+  // userId Int?
+  // user User? @relation(fields: [userId], references: [id])
+  // game_packages GamePackage[]
+
+  created_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
+
+model Game {
+  id Int @default(autoincrement()) @id
+  name String
+
+  email String
+
+  // timelineId Int?
+  // timeline Timeline? @relation(fields: [timelineId], references: [id])
+
+  created_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
+
+model Film {
+  id Int @default(autoincrement()) @id
+  name String
+
+  email String
+
+  created_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
+
+model Osc {
+  id Int @default(autoincrement()) @id
+  name String
+
+  email String
+
+  created_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
+
+model Football {
+  id Int @default(autoincrement()) @id
+  name String
+
+  email String
+
+  created_time DateTime?
+  updated_time DateTime?
+  remark String?
+}
