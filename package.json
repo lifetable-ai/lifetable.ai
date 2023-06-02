@@ -1,0 +1,15 @@
+{
+  "name": "ningowood",
+  "version": "0.2.0",
+  "description": "![](./public/static/showcase-20221126.webp)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd ningowood.com && npm run dev"
+  },
+  "keywords": [],
+  "author": {
+    "name": "ningowood",
+    "email": "hylerrix@gmail.com"
+  },
+  "license": ""
+}
