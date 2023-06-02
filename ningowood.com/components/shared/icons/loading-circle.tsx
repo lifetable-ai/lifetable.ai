@@ -16,5 +16,5 @@ export default function LoadingCircle() {
         fill="currentFill"
       />
     </svg>
-  );
+  )
 }

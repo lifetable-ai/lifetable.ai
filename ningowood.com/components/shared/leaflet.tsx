@@ -1,33 +1,33 @@
-import { useEffect, useRef, ReactNode, Dispatch, SetStateAction } from "react";
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { useEffect, useRef, ReactNode, Dispatch, SetStateAction } from "react"
+import { AnimatePresence, motion, useAnimation } from "framer-motion"
 
 export default function Leaflet({
   setShow,
   children,
 }: {
-  setShow: Dispatch<SetStateAction<boolean>>;
-  children: ReactNode;
+  setShow: Dispatch<SetStateAction<boolean>>
+  children: ReactNode
 }) {
-  const leafletRef = useRef<HTMLDivElement>(null);
-  const controls = useAnimation();
-  const transitionProps = { type: "spring", stiffness: 500, damping: 30 };
+  const leafletRef = useRef<HTMLDivElement>(null)
+  const controls = useAnimation()
+  const transitionProps = { type: "spring", stiffness: 500, damping: 30 }
   useEffect(() => {
     controls.start({
       y: 20,
       transition: transitionProps,
-    });
+    })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [])
 
   async function handleDragEnd(_: any, info: any) {
-    const offset = info.offset.y;
-    const velocity = info.velocity.y;
-    const height = leafletRef.current?.getBoundingClientRect().height || 0;
+    const offset = info.offset.y
+    const velocity = info.velocity.y
+    const height = leafletRef.current?.getBoundingClientRect().height || 0
     if (offset > height / 2 || velocity > 800) {
-      await controls.start({ y: "100%", transition: transitionProps });
-      setShow(false);
+      await controls.start({ y: "100%", transition: transitionProps })
+      setShow(false)
     } else {
-      controls.start({ y: 0, transition: transitionProps });
+      controls.start({ y: 0, transition: transitionProps })
     }
   }
 
@@ -64,5 +64,5 @@ export default function Leaflet({
         onClick={() => setShow(false)}
       />
     </AnimatePresence>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import HomeIntroHeader from "@/components/home/home-Intro-header";
+import HomeIntroHeader from "@/components/home/home-Intro-header"
 
 export default async function Home() {
   return (
@@ -9,5 +9,5 @@ export default async function Home() {
        */}
       <HomeIntroHeader />
     </>
-  );
+  )
 }

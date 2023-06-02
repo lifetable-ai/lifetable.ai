@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import ReactMarkdown from "react-markdown";
-import Balancer from "react-wrap-balancer";
+import { ReactNode } from "react"
+import ReactMarkdown from "react-markdown"
+import Balancer from "react-wrap-balancer"
 
 export default function Card({
   title,
@@ -8,10 +8,10 @@ export default function Card({
   demo,
   large,
 }: {
-  title: string;
-  description: string;
-  demo: ReactNode;
-  large?: boolean;
+  title: string
+  description: string
+  demo: ReactNode
+  large?: boolean
 }) {
   return (
     <div
@@ -52,5 +52,5 @@ export default function Card({
         </div>
       </div>
     </div>
-  );
+  )
 }

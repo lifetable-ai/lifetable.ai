@@ -1,8 +1,8 @@
-import Balancer from "react-wrap-balancer";
+import Balancer from "react-wrap-balancer"
 
-import { nFormatter } from "@/lib/utils";
-import { DEPLOY_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
+import { nFormatter } from "@/lib/utils"
+import { DEPLOY_URL } from "@/lib/constants"
+import { Github, Twitter } from "@/components/shared/icons"
 
 export default async function HomeIntroHeader() {
   const { stargazers_count: stars } = await fetch(
@@ -19,7 +19,7 @@ export default async function HomeIntroHeader() {
     },
   )
     .then((res) => res.json())
-    .catch((e) => console.log(e));
+    .catch((e) => console.log(e))
 
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -91,5 +91,5 @@ export default async function HomeIntroHeader() {
         </a>
       </div>
     </div>
-  );
+  )
 }
