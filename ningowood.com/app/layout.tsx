@@ -7,17 +7,19 @@ import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
 
 export const metadata = {
-  title: "Precedent - Building blocks for your Next.js project",
+  title:
+    "Ningowood - Add the missing community to the spreadsheet database ecology",
   description:
-    "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
+    "Ningowood v0.2 is focus on adding the missing community to the spreadsheet database ecology.",
   twitter: {
     card: "summary_large_image",
-    title: "Precedent - Building blocks for your Next.js project",
+    title:
+      "Ningowood - Add the missing community to the spreadsheet database ecology",
     description:
-      "Precedent is the all-in-one solution for your Next.js project. It includes a design system, authentication, analytics, and more.",
-    creator: "@steventey",
+      "Ningowood v0.2 is focus on adding the missing community to the spreadsheet database ecology.",
+    creator: "@hylerrix",
   },
-  metadataBase: new URL("https://precedent.dev"),
+  metadataBase: new URL("http://ningowood.com"),
   themeColor: "#FFF",
 };
 
