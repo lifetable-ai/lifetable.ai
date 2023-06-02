@@ -1,18 +1,12 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import {
-  Activity,
-  CreditCard,
   Database,
-  DollarSign,
-  Download,
   GitFork,
-  Speaker,
   Star,
   Users,
 } from "lucide-react"
 
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -20,15 +14,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-import { CalendarDateRangePicker } from "./components/date-range-picker"
-import { MainNav } from "./components/main-nav"
 import { Overview } from "./components/overview"
 import { RecentDatabases } from "./components/recent-databases"
-import { Search } from "./components/search"
-import TeamSwitcher from "./components/team-switcher"
-import { UserNav } from "./components/user-nav"
 
 export const metadata: Metadata = {
   title: "Dashboard",

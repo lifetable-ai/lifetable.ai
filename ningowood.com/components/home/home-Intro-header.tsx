@@ -4,22 +4,22 @@ import { nFormatter } from "@/lib/utils"
 import { DEPLOY_URL } from "@/lib/constants"
 import { Github, Twitter } from "@/components/shared/icons"
 
-export default async function HomeIntroHeader() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/ningowood/ningowood",
-    {
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every 60 seconds
-      next: { revalidate: 60 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e))
+export default function HomeIntroHeader() {
+  // const { stargazers_count: stars } = await fetch(
+  //   "https://api.github.com/repos/ningowood/ningowood",
+  //   {
+  //     ...(process.env.GITHUB_OAUTH_TOKEN && {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //     }),
+  //     // data will revalidate every 60 seconds
+  //     next: { revalidate: 60 },
+  //   },
+  // )
+  //   .then((res) => res.json())
+  //   .catch((e) => console.log(e))
 
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
@@ -86,7 +86,7 @@ export default async function HomeIntroHeader() {
           <Github />
           <p>
             <span className="hidden sm:inline-block">Star on</span> GitHub{" "}
-            <span className="font-semibold">{nFormatter(stars)}</span>
+            <span className="font-semibold">{nFormatter(999)}</span>
           </p>
         </a>
       </div>

@@ -5,17 +5,17 @@ const RECENT_DATABASE_LIST = [
     logo: "/logo/airtable.webp",
     type: "Airtable",
     author: "hylerrix",
-    name: "My favorite game List",
-    description: "Including PS, XBox, Switch, Steam, GOG, Epic and more.",
-    stars: 1593,
+    name: "All YC Investment case in one place",
+    description: "The 2023 investment winds reveal the arrival of the new AI era.",
+    stars: 9999,
   },
   {
     logo: "/logo/airtable.webp",
     type: "Airtable",
     author: "hylerrix",
-    name: "All YC Investment case in one place",
-    description: "The 2023 investment winds reveal the arrival of the new AI era.",
-    stars: 9999,
+    name: "My favorite game List",
+    description: "Including PS, XBox, Switch, Steam, GOG, Epic and more.",
+    stars: 1593,
   },
   {
     logo: "/logo/airtable.webp",
@@ -39,9 +39,9 @@ export function RecentDatabases() {
   return (
     <div className="space-y-8">
       {
-        RECENT_DATABASE_LIST.map((db) => {
+        RECENT_DATABASE_LIST.map((db, index) => {
           return (
-            <div className="flex items-center">
+            <div className="flex items-center" key={index}>
               <Avatar className="h-9 w-9">
                 <AvatarImage src={db.logo} alt="Avatar" />
                 <AvatarFallback>OM</AvatarFallback>
