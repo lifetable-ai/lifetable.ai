@@ -8,13 +8,13 @@ import { Suspense } from "react"
 
 export const metadata = {
   title:
-    "Ningowood - Add the missing community to the spreadsheet database ecology",
+    "Ningowood - Add the missing all-in-one community to the spreadsheet database ecology",
   description:
     "Ningowood v0.2 is focus on adding the missing community to the spreadsheet database ecology.",
   twitter: {
     card: "summary_large_image",
     title:
-      "Ningowood - Add the missing community to the spreadsheet database ecology",
+      "Ningowood - Add the missing all-in-one community to the spreadsheet database ecology",
     description:
       "Ningowood v0.2 is focus on adding the missing community to the spreadsheet database ecology.",
     creator: "@hylerrix",

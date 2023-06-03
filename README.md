@@ -1,10 +1,10 @@
-# [Ningowood](http://ningowood) v0.2.0: Add the missing community to the spreadsheet database ecology
+# [Ningowood](http://ningowood) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology
 
-![](./public/static/showcase-20221126.webp)
+![](./public/static/showcase-20230604.webp)
 
 ## Read the newest artitle
 
-[Ningowood v0.2.0: Add the missing community to the spreadsheet database ecology](./blogs/2023-0618-ningowood-v0_2.md): in writing...
+[Ningowood v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology](./blogs/2023-0618-ningowood-v0_2.md): in writing...
 
 ## Webinar resource
 

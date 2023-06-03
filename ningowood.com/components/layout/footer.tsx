@@ -11,6 +11,33 @@ export default function Footer() {
         >
           Precedent
         </a>
+        ,&nbsp;
+        <a
+          className="font-medium text-gray-800 underline transition-colors"
+          href="https://ui.shadcn.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Shadcn UI
+        </a>
+        ,&nbsp;
+        <a
+          className="font-medium text-gray-800 underline transition-colors"
+          href="https://tx.shadcn.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Taxonomy
+        </a>
+        &nbsp;and&nbsp;
+        <a
+          className="font-medium text-gray-800 underline transition-colors"
+          href="https://preline.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Preline UI
+        </a>
       </p>
     </div>
   )

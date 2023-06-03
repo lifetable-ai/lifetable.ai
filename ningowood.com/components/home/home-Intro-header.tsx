@@ -1,8 +1,29 @@
 import Balancer from "react-wrap-balancer"
+import Image from "next/image"
 
 import { nFormatter } from "@/lib/utils"
 import { DEPLOY_URL } from "@/lib/constants"
 import { Github, Twitter } from "@/components/shared/icons"
+import { SupportSsDB } from "./constant"
+import { SupportItem } from "./type"
+
+interface SupportItemProps {
+  db: SupportItem
+}
+
+const SupportItem = ({ db }: SupportItemProps) => {
+  return (
+    <a href={db.link} className="inline-block mx-1">
+      <Image
+        src={db.logo}
+        alt={db.name}
+        className="h-10 w-10 rounded-full"
+        width={20}
+        height={20}
+      />
+    </a>
+  )
+}
 
 export default function HomeIntroHeader() {
   // const { stargazers_count: stars } = await fetch(
@@ -24,7 +45,7 @@ export default function HomeIntroHeader() {
   return (
     <div className="z-10 w-full max-w-xl px-5 xl:px-0">
       <a
-        href="https://twitter.com/steventey/status/1613928948915920896"
+        href="https://twitter.com/hylerrix/hylerrix"
         target="_blank"
         rel="noreferrer"
         className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
@@ -39,7 +60,7 @@ export default function HomeIntroHeader() {
         style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
       >
         <Balancer>
-          Add the missing community to the spreadsheet database ecology
+          Add the missing all-in-one community to the spreadsheet database ecology
         </Balancer>
       </h1>
       <p
@@ -47,10 +68,16 @@ export default function HomeIntroHeader() {
         style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
       >
         <Balancer>
-          Make the structured data sharing as easy as you wish. First support
-          Airtable.
+          Make the structured data all together, and sharing as easy as you wish.
         </Balancer>
       </p>
+      <div
+        className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
+        style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+      >
+        { SupportSsDB.map((db) => <SupportItem db={db} />) }
+        <span className="mx-1">...</span>
+      </div>
       <div
         className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
         style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
@@ -75,8 +102,9 @@ export default function HomeIntroHeader() {
               strokeLinejoin="round"
             />
           </svg>
-          <p>Explore now</p>
+          <p>Add your database</p>
         </a>
+
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
           href="https://github.com/ningowood/ningowood"
@@ -89,6 +117,14 @@ export default function HomeIntroHeader() {
             <span className="font-semibold">{nFormatter(999)}</span>
           </p>
         </a>
+
+        <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800" href="/os/lifetable">
+          Explore Now
+          <svg className="w-3 h-3" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+
       </div>
     </div>
   )
