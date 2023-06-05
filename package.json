@@ -4,7 +4,8 @@
   "description": "![](./public/static/showcase-20221126.webp)",
   "main": "index.js",
   "scripts": {
-    "dev": "cd ningowood.com && npm run dev"
+    "dev": "cd ningowood.com && npm run dev",
+    "build": "cd ningowood.com && npm run build"
   },
   "keywords": [],
   "author": {

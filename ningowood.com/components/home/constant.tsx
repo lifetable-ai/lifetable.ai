@@ -46,6 +46,11 @@ export const SupportSsDB: SupportItem[] = [
     logo: '/logo/actiondesk.webp',
     link: 'https://www.actiondesk.io/',
   },
+  {
+    name: 'Mathesar',
+    logo: '/logo/mathesar.webp',
+    link: 'https://www.mathesar.org/',
+  },
   // {
   //   name: 'Trello',
   //   logo: '/logo/trello.webp',
