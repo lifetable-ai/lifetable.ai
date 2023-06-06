@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import { ImageResponse } from "next/server";
+import { ImageResponse } from "next/server"
 
-export const runtime = "edge";
-export const alt = "Precedent - Building blocks for your Next.js project";
-export const contentType = "image/png";
+export const runtime = "edge"
+export const alt = "Precedent - Building blocks for your Next.js project"
+export const contentType = "image/png"
 
 export default async function OG() {
   const sfPro = await fetch(
     new URL("./fonts/SF-Pro-Display-Medium.otf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+  ).then((res) => res.arrayBuffer())
 
   return new ImageResponse(
     (
@@ -56,5 +56,5 @@ export default async function OG() {
         },
       ],
     },
-  );
+  )
 }

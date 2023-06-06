@@ -1,5 +1,5 @@
-import { MetadataRoute } from "next";
-import prisma from "@/lib/prisma";
+import { MetadataRoute } from "next"
+import prisma from "@/lib/prisma"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const users = await prisma.user.findMany({
@@ -7,16 +7,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       id: true,
     },
     take: 1,
-  });
+  })
 
   return [
     {
-      url: "https://precedent.dev",
+      url: "http://ningowood.com",
       lastModified: new Date(),
     },
     ...users.map((user) => ({
-      url: `https://precedent.dev/${user.id}`,
+      url: `http://ningowood.com/${user.id}`,
       lastModified: new Date(),
     })),
-  ];
+  ]
 }

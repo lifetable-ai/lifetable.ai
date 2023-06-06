@@ -1,22 +1,22 @@
-"use client";
+"use client"
 
-import { ReactNode, useState } from "react";
-import * as TooltipPrimitive from "@radix-ui/react-tooltip";
-import useWindowSize from "@/lib/hooks/use-window-size";
-import Leaflet from "./leaflet";
+import { ReactNode, useState } from "react"
+import * as TooltipPrimitive from "@radix-ui/react-tooltip"
+import useWindowSize from "@/lib/hooks/use-window-size"
+import Leaflet from "./leaflet"
 
 export default function Tooltip({
   children,
   content,
   fullWidth,
 }: {
-  children: ReactNode;
-  content: ReactNode | string;
-  fullWidth?: boolean;
+  children: ReactNode
+  content: ReactNode | string
+  fullWidth?: boolean
 }) {
-  const [openTooltip, setOpenTooltip] = useState(false);
+  const [openTooltip, setOpenTooltip] = useState(false)
 
-  const { isMobile, isDesktop } = useWindowSize();
+  const { isMobile, isDesktop } = useWindowSize()
 
   return (
     <>
@@ -67,5 +67,5 @@ export default function Tooltip({
         </TooltipPrimitive.Provider>
       )}
     </>
-  );
+  )
 }

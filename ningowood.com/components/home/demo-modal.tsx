@@ -1,19 +1,13 @@
-import Modal from "@/components/shared/modal";
-import {
-  useState,
-  Dispatch,
-  SetStateAction,
-  useCallback,
-  useMemo,
-} from "react";
-import Image from "next/image";
+import Modal from "@/components/shared/modal"
+import { useState, Dispatch, SetStateAction, useCallback, useMemo } from "react"
+import Image from "next/image"
 
 const DemoModal = ({
   showDemoModal,
   setShowDemoModal,
 }: {
-  showDemoModal: boolean;
-  setShowDemoModal: Dispatch<SetStateAction<boolean>>;
+  showDemoModal: boolean
+  setShowDemoModal: Dispatch<SetStateAction<boolean>>
 }) => {
   return (
     <Modal showModal={showDemoModal} setShowModal={setShowDemoModal}>
@@ -36,11 +30,11 @@ const DemoModal = ({
         </div>
       </div>
     </Modal>
-  );
-};
+  )
+}
 
 export function useDemoModal() {
-  const [showDemoModal, setShowDemoModal] = useState(false);
+  const [showDemoModal, setShowDemoModal] = useState(false)
 
   const DemoModalCallback = useCallback(() => {
     return (
@@ -48,11 +42,11 @@ export function useDemoModal() {
         showDemoModal={showDemoModal}
         setShowDemoModal={setShowDemoModal}
       />
-    );
-  }, [showDemoModal, setShowDemoModal]);
+    )
+  }, [showDemoModal, setShowDemoModal])
 
   return useMemo(
     () => ({ setShowDemoModal, DemoModal: DemoModalCallback }),
     [setShowDemoModal, DemoModalCallback],
-  );
+  )
 }

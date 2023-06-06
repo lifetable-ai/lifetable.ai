@@ -1,4 +1,4 @@
-import styles from "./loading-spinner.module.css";
+import styles from "./loading-spinner.module.css"
 
 export default function LoadingSpinner() {
   return (
@@ -16,5 +16,5 @@ export default function LoadingSpinner() {
       <div></div>
       <div></div>
     </div>
-  );
+  )
 }

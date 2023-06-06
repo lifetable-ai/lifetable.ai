@@ -12,8 +12,8 @@ const nextConfig = {
         destination: "https://github.com/steven-tey/precedent",
         permanent: false,
       },
-    ];
+    ]
   },
-};
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

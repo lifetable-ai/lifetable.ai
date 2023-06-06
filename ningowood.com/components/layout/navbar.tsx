@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import useScroll from "@/lib/hooks/use-scroll";
-import { useSignInModal } from "./sign-in-modal";
-import UserDropdown from "./user-dropdown";
-import { Session } from "next-auth";
+import Image from "next/image"
+import Link from "next/link"
+import useScroll from "@/lib/hooks/use-scroll"
+import { useSignInModal } from "./sign-in-modal"
+import UserDropdown from "./user-dropdown"
+import { Session } from "next-auth"
 
 export default function NavBar({ session }: { session: Session | null }) {
-  const { SignInModal, setShowSignInModal } = useSignInModal();
-  const scrolled = useScroll(50);
+  const { SignInModal, setShowSignInModal } = useSignInModal()
+  const scrolled = useScroll(50)
 
   return (
     <>
@@ -25,12 +25,12 @@ export default function NavBar({ session }: { session: Session | null }) {
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
               src="/logo.png"
-              alt="Precedent logo"
+              alt="Ningowood logo"
               width="30"
               height="30"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>Precedent</p>
+            <p>Ningowood</p>
           </Link>
           <div>
             {session ? (
@@ -47,5 +47,5 @@ export default function NavBar({ session }: { session: Session | null }) {
         </div>
       </div>
     </>
-  );
+  )
 }

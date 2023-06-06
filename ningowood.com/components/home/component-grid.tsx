@@ -1,14 +1,16 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { useDemoModal } from "@/components/home/demo-modal";
-import Popover from "@/components/shared/popover";
-import Tooltip from "@/components/shared/tooltip";
-import { ChevronDown } from "lucide-react";
+import { useState } from "react"
+import { ChevronDown } from "lucide-react"
+
+import { useDemoModal } from "@/components/home/demo-modal"
+import Popover from "@/components/shared/popover"
+import Tooltip from "@/components/shared/tooltip"
 
 export default function ComponentGrid() {
-  const { DemoModal, setShowDemoModal } = useDemoModal();
-  const [openPopover, setOpenPopover] = useState(false);
+  const { DemoModal, setShowDemoModal } = useDemoModal()
+  const [openPopover, setOpenPopover] = useState(false)
+
   return (
     <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
       <DemoModal />
@@ -53,5 +55,5 @@ export default function ComponentGrid() {
         </div>
       </Tooltip>
     </div>
-  );
+  )
 }
