@@ -8,8 +8,8 @@
 
 ## Webinar resource
 
-* 2023-06-XX: (en-US)(Uploading soon) share v0.2 to the global world in Youtube.
-* 2023-06-XX: (zh-CN)(Inner Resource) share v0.2 to MiraclePlus.
+* 2023-XX-XX: (en-US)(Coming soon) share v0.2 to the global world in Youtube.
+* 2023-06-12: (zh-CN)(Inner Resource) share v0.2 to MiraclePlus.
 * 2022-11-26: (zh-CN)(Inner Resource) share v0.1 to freeCodeCamp, Tianjin, China.
 
 ## Development togehter
@@ -17,7 +17,7 @@
 > Everything is just beginning, welcome your contribute!
 
 * Git clone this monorepo.
-* For v0.1.0: Independently install node_modules in both microfrontends/* and microbackends/*.
+* For v0.1: Independently install node_modules in both microfrontends/* and microbackends/*.
 * Any development question new, please submit in [Issues](https://github.com/ningowood/ningowood/issues).
 
 ## Community

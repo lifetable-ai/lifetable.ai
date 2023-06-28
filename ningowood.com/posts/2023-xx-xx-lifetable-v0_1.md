@@ -1,6 +1,29 @@
-# [Ningowood](http://ningowood) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology
+# Introducing [Lifetable](http://ningowood): Add the missing all-in-one community to the spreadsheet database ecology
 
 ![](./public/static/showcase-20221126.webp)
+
+## 111
+
+Just after the Ningowood v0.1 (2022-11-26) release, ChatGPT 3.5 comes out (2022-11-30). We share a common vision for what AI can do now.
+
+Not only does it introduce a clever question-and-answer robot, but it also reveals a whole new arrival in the era of AI.
+
+Almost every application and phase in software development can take a big step into the AI era by rewriting and plugging in large AI models, and this will dramatically change how people work and significantly improve work efficiency.
+
+Back to the product we want to build next (before adding the AIGC technology), Ningowood v0.1 shows us the initial stage of how to track many different entities. But in that scenario, each entity should code the same CRUD logic, which is burdensome. We need a better solution.
+
+As developers, all the data we want to manage and share can be saved into the database directly. But regular users who are not proficient in programming need an upper-scale application to organise the data. One of the ways is using spreadsheet applications to solve this situation (No code for users, just edit and calculate).
+
+And when technology evolves, developers can build applications based on the advanced spreadsheet application directly instead of the traditional databases. And we call this higher application `Spreadsheet Database`.
+
+> [Database vs. spreadsheet: which is better?](https://blog.airtable.com/database-vs-spreadsheet/)
+
+### Refrence
+
+* 2023.03.01. [ChatGPT: New Enlightenment or Intelligence Theater?](https://www.linkedin.com/pulse/chatgpt-new-enlightenment-intelligence-theater-herbert-roitblat/)
+* 2021.08.06. [Software 2.0: Software Development In The Age Of AI](https://www.argosinfotech.com/software-2-0-software-development-in-the-age-of-ai/)
+* 2023.06.20. [Is There a Future for Software Engineers? The Impact of AI [2023]](https://brainhub.eu/library/software-developer-age-of-ai)
+* 2021.06.15. [Software 2.0: Software Development in the Age of AI](https://www.bairesdev.com/blogsoftware-development-in-the-age-of-ai/)
 
 ## Why you need: About the numerous data
 
