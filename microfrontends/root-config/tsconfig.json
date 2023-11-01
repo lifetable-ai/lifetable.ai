@@ -1,9 +1,0 @@
-{
-  "extends": "ts-config-single-spa",
-  "files": ["src/ningowood-root-config.ts"],
-  "compilerOptions": {
-    "declarationDir": "dist"
-  },
-  "include": ["src/**/*"],
-  "exclude": ["src/**/*.test*"]
-}
