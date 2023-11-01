@@ -1,4 +1,4 @@
-# [Ningowood](http://ningowood) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology
+# [Lifetable](http://lifetable.ai) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology
 
 ![](./public/static/showcase-20230604.webp)
 

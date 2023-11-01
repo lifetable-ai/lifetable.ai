@@ -1,15 +1,15 @@
 {
-  "name": "ningowood",
+  "name": "lifetable",
   "version": "0.2.0",
   "description": "![](./public/static/showcase-20221126.webp)",
   "main": "index.js",
   "scripts": {
-    "dev": "cd ningowood.com && npm run dev",
-    "build": "cd ningowood.com && npm run build"
+    "dev": "cd lifetable.ai && npm run dev",
+    "build": "cd lifetable.ai && npm run build"
   },
   "keywords": [],
   "author": {
-    "name": "ningowood",
+    "name": "lifetable",
     "email": "hylerrix@gmail.com"
   },
   "license": ""
