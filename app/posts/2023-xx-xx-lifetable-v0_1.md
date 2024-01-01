@@ -1,6 +1,6 @@
-# Introducing [Lifetable](http://ningowood): Add the missing all-in-one community to the spreadsheet database ecology
+# Introducing [Lifetable](https://lifetable.ai): Add the missing all-in-one community to the spreadsheet database ecology
 
-![](./public/static/showcase-20221126.webp)
+![](./public/static/showcase-2022-11-26.webp)
 
 ## 111
 
@@ -86,13 +86,13 @@ JavaScript is everywhere, build it in XR is just the beginning for our world.
 
 * Discord Group: https://discord.gg/YeZQ8fegmq
 * Wechat Personal: hylerrix
-* Wechat Official Account: ningowood
+* Wechat Official Account: lifetable-ai
 * For more idea about this repo , directly message to me: hylerrix@gmail.com.
 
 ## Notice
 
-1. This is a very first demo preview of Ningowood. After online registration, ur data starts to be collected in the Ningo Cloud. Register with ur real email to receive further updates! (Only email will remain in the first stable release.)
-2. Introduction about Ningowood will continuing writing in this place. Functionality updates about Ningowood will continuing pushing to this repo. Don't forget to back to this sweety home any time u want!
+1. This is a very first demo preview of Lifetable. After online registration, ur data starts to be collected in the Ningo Cloud. Register with ur real email to receive further updates! (Only email will remain in the first stable release.)
+2. Introduction about Lifetable will continuing writing in this place. Functionality updates about Lifetable will continuing pushing to this repo. Don't forget to back to this sweety home any time u want!
 
 ## License
 

@@ -22,7 +22,7 @@ const RECENT_DATABASE_LIST = [
     type: "Jotform",
     author: "hylerrix",
     name: "Automation workflow example",
-    description: "The official Ningowood showcase to control all your workflow.",
+    description: "The official Lifetable showcase to control all your workflow.",
     stars: 8704,
   },
   {
