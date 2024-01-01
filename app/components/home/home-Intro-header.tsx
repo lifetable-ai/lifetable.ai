@@ -27,7 +27,7 @@ const SupportItem = ({ db }: SupportItemProps) => {
 
 export default function HomeIntroHeader() {
   // const { stargazers_count: stars } = await fetch(
-  //   "https://api.github.com/repos/ningowood/ningowood",
+  //   "https://api.github.com/repos/lifetable-ai/lifetable.ai",
   //   {
   //     ...(process.env.GITHUB_OAUTH_TOKEN && {
   //       headers: {
@@ -45,12 +45,12 @@ export default function HomeIntroHeader() {
   return (
     <div className="my-4">
       <a
-        href="https://twitter.com/hylerrix/hylerrix"
+        href="https://twitter.com/lifetable_ai"
         target="_blank"
         rel="noreferrer"
         className="mx-auto mb-5 flex max-w-fit animate-fade-up items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-colors hover:bg-blue-200"
       >
-        <Twitter className="h-5 w-5 text-[#1d9bf0]" />
+        <Github className="h-5 w-5 text-[#1d9bf0]" />
         <p className="text-sm font-semibold text-[#1d9bf0]">
           Introducing Lifetable v0.3
         </p>
@@ -62,7 +62,7 @@ export default function HomeIntroHeader() {
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer className="text-4xl">
-            Introducing 1st CORE APP in micro app market: <span className="text-5xl">LifeTable</span>!
+            Introducing <span className="text-5xl">LifeTable</span>!
           </Balancer>
         </h1>
         <h1
@@ -124,7 +124,7 @@ export default function HomeIntroHeader() {
       >
         <a
           className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-5 py-2 text-sm text-gray-600 shadow-md transition-colors hover:border-gray-800"
-          href="https://github.com/ningowood/ningowood"
+          href="https://github.com/lifetable-ai/lifetable.ai"
           target="_blank"
           rel="noopener noreferrer"
         >

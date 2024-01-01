@@ -1,7 +1,7 @@
 {
   "name": "lifetable",
   "version": "0.2.0",
-  "description": "![](./public/static/showcase-20221126.webp)",
+  "description": "![](./public/static/showcase-2022-11-26.webp)",
   "main": "index.js",
   "scripts": {
     "dev": "cd lifetable.ai && npm run dev",
