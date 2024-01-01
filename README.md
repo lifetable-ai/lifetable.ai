@@ -1,4 +1,4 @@
-# [Lifetable](http://lifetable.ai) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology
+# [Lifetable](http://lifetable.ai) v0.2.0: Add the missing all-in-one community to the spreadsheet database ecology <img align="right" alt="Profile Hits" src="https://komarev.com/ghpvc/?username=lifetable-ai-lifeatble-ai&style=flat-square">
 
 <table>
   <tbody>
