@@ -4,8 +4,8 @@
   "description": "![](./public/static/showcase-2022-11-26.webp)",
   "main": "index.js",
   "scripts": {
-    "dev": "cd lifetable.ai && npm run dev",
-    "build": "cd lifetable.ai && npm run build"
+    "dev": "cd app && npm run dev",
+    "build": "cd app && npm run build"
   },
   "keywords": [],
   "author": {
